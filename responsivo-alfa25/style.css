@@ -101,6 +101,7 @@ h2 {
     margin: 0 auto;
     border-radius: 200px;
     margin-bottom: 20px;
+    overflow: hidden;
 }
 
 #contato label {
@@ -115,13 +116,90 @@ h2 {
     margin-top: 10px 0;
     margin-bottom: 20px;
 }
-footer{
+
+footer {
     background-color: #4d4d4d;
     padding: 50px 0;
     font-size: 20px;
     color: #fff;
 }
-footer h2{
+
+nav .fa-bars {
+    float: right;
+}
+
+#servicos i {
+    font-size: 40px;
     color: #fff;
-    margin: 10px;
+    padding-top: 20px;
+}
+
+#servicos {
+    padding: 40px 0;
+}
+
+footer h2 {
+    color: #fff;
+    margin: 20px;
+}
+
+.menu-desktop {
+    display: none;
+}
+
+@media(min-width:680px) {
+    .menu-mobile {
+        display: none;
+    }
+
+    .menu-desktop {
+        display: block;
+        color: #fff;
+    }
+
+    .menu-open li {
+        display: inline;
+        padding: 0 20px;
+    }
+
+    .menu-open {
+        display: inline;
+    }
+
+    .item {
+        width: 29% !important;
+        padding: 1%;
+        margin: 1%;
+        display: inline-block;
+        vertical-align: top;
+    }
+}
+
+.title {
+    text-align: center;
+}
+
+.chat {
+    position: fixed;
+    z-index: 999;
+    bottom: 30px;
+    right: 20px;
+    background-color: #075e54;
+    width: 35px;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.chat a {
+    color: #fff;
+}
+
+.chat i {
+    font-size: 40px;
+}
+
+.slider {
+    height: 350px;
+    background: url(banner.jpg) 100% -395px / cover no-repeat fixed;
+    ;
 }
