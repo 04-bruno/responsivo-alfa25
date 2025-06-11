@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Savate:ital,wght@0,200..900;1,200..900&display=swap');
+
 body {
     background-color: #f4f4f4;
+    font-family: "Savate", sans-serif;
 }
 
 nav .menu {
@@ -38,6 +41,7 @@ nav a {
 
 content {
     padding: 10px;
+    font-size: 22px;
 }
 
 h2 {
@@ -147,33 +151,17 @@ footer h2 {
     display: none;
 }
 
-@media(min-width:680px) {
-    .menu-mobile {
-        display: none;
-    }
-
-    .menu-desktop {
-        display: block;
-        color: #fff;
-    }
-
-    .menu-open li {
-        display: inline;
-        padding: 0 20px;
-    }
-
-    .menu-open {
-        display: inline;
-    }
-
-    .item {
-        width: 29% !important;
-        padding: 1%;
-        margin: 1%;
-        display: inline-block;
-        vertical-align: top;
-    }
+.page #servicos {
+    background-color: #f4f4f4;
+    color: #4d4d4d;
 }
+
+.page #servicos h2,
+.page #servicos i {
+    color: #4d4d4d;
+}
+
+
 
 .title {
     text-align: center;
@@ -200,6 +188,60 @@ footer h2 {
 
 .slider {
     height: 350px;
-    background: url(banner.jpg) 100% -395px / cover no-repeat fixed;
+    background: url(img/banner.jpg) 100% -395px / cover no-repeat fixed;
     ;
+}
+
+.content.page img {
+    width: 100%;
+    margin-top: 10px;
+}
+
+a {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+a:hover {
+    opacity: 0.3s;
+    transition: 0.5s;
+}
+
+@media(min-width:680px) {
+    .content.page p {
+        width: 60%;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .content.page img {
+        width: 30%;
+        font-display: inline-block;
+    }
+
+    .menu-mobile {
+        display: none;
+    }
+
+    .menu-desktop {
+        display: block;
+        color: #fff;
+    }
+
+    .menu-open li {
+        display: inline;
+        padding: 0 20px;
+    }
+
+    .menu-open {
+        display: inline;
+    }
+
+    .item {
+        width: 28% !important;
+        padding: 1%;
+        margin: 1%;
+        display: inline-block;
+        vertical-align: top;
+    }
 }

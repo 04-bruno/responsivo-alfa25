@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Escritório advocacia</title>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/91a72d9a00.js" crossorigin="anonymous"></script>
 </head>
@@ -14,8 +15,8 @@
         <nav class="menu-desktop">
             LALAdvogados<i class="fa-solid fa-frog"></i>
             <ul class="menu-open">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="index.html">inicio</a></li>
+                <li><a href="divorcio.html">divorcio</a></li>
                 <li><a href="#servicos">Serviços</a></li>
                 <li><a href="#profissionais">Profissionais</a></li>
                 <li><a href="#contato">Contato</a></li>
@@ -24,8 +25,8 @@
         <nav class="menu-mobile">
             <a href="#menu">menu <i class="fa-solid fa-bars"></i> </a>
             <ul class="menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="index.html">inicio</a></li>
+                <li><a href="divorcio.html">divorcio</a></li>
                 <li><a href="#servicos">Serviços</a></li>
                 <li><a href="#profissionais">Profissionais</a></li>
                 <li><a href="#contato">Contato</a></li>
@@ -69,32 +70,6 @@
             temporibus sunt delectus.</p>
     </div>
     </div>
-    <div id="servicos">
-        <div class="item">
-            <i class="fa-solid fa-heart-crack"></i>
-            <h2>Divórcio</h2>
-        </div>
-        <div class="item">
-            <i class="fa-solid fa-cart-plus"></i>
-            <h2>Pensão alimenticia</h2>
-        </div>
-        <div class="item">
-            <i class="fa-solid fa-heart"></i>
-            <h2>União Estável</h2>
-        </div>
-        <div class="item">
-            <i class="fa-solid fa-children"></i>
-            <h2>guarda dos filhos</h2>
-        </div>
-        <div class="item">
-            <i class="fa-solid fa-dollar-sign"></i>
-            <h2>Direito a herança</h2>
-        </div>
-        <div class="item">
-            <i class="fa-solid fa-plane"></i>
-            <h2>Viagem Internacional</h2>
-        </div>
-    </div>
     <div class="content">
         <div id="profissionais">
             <h2 class="title"> <i class="fa-solid fa-user-tie"></i> Equipe de advogados especializados em direito
@@ -129,11 +104,40 @@
 
         </div>
     </div>
+    <div id="servicos">
+        <h2>Outros Serviços</h2>
+        <div class="item">
+            <a href="divorcio.html">
+                <i class="fa-solid fa-heart-crack"></i>
+                <h2>Divórcio</h2>
+            </a>
+        </div>
+        <div class="item">
+            <i class="fa-solid fa-cart-plus"></i>
+            <h2>Pensão alimenticia</h2>
+        </div>
+        <div class="item">
+            <i class="fa-solid fa-heart"></i>
+            <h2>União Estável</h2>
+        </div>
+        <div class="item">
+            <i class="fa-solid fa-children"></i>
+            <h2>guarda dos filhos</h2>
+        </div>
+        <div class="item">
+            <i class="fa-solid fa-dollar-sign"></i>
+            <h2>Direito a herança</h2>
+        </div>
+        <div class="item">
+            <i class="fa-solid fa-plane"></i>
+            <h2>Viagem Internacional</h2>
+        </div>
+    </div>
     <footer id="contato">
         <div class="content">
             <div class="item">
                 <h2>Fale conosco <i class="fa-solid fa-microphone"></i> </h2>
-                <form action="">
+                <form action="http://api.whatsapp.com/send?" method="get">
                     <label for="nome">
                         Nome:
                         <input type="text" name="nome"></imput>
@@ -144,7 +148,11 @@
                     </label>
                     <label for="mensagem">
                         Mensagem:
-                        <input type="text" name="mensagem"></imput>
+                        <input type="text" name="text"></imput>
+                    </label>
+                    <input type="text" name="phone" hidden value="5544991463773">
+                    <label for="enviar">
+                        <input type="submit" value="Enviar mensagem">
                     </label>
                 </form>
             </div>
